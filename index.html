@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.css">
+</head>
+<style>
+    #ml:hover{
+        background-color: aqua;
+    }
+    #sb:hover{
+        background-color: green;
+    }
+    #add:hover{
+        background-color: blue;
+    }
+    #div:hover{
+        background-color: yellow;
+    }
+
+</style>
+<body >
+    <center class="ms-5 me-5 bg-danger p-3">
+    <h5>CHOOSE YOUR ARITHMETIC</h5>
+    <input type="number" id="rowId" placeholder="ROW" class="text-center">
+    <input type="number" id="columnId" placeholder="COLUMN" class="text-center">
+    <table class="table"></table>
+    <button onclick="ml()" id="ml">MULTIPLICATION (*)</button>
+    <button onclick="sb()" id="sb">SUBTRACTION (-)</button>
+    <button onclick="add()" id="add">ADDITION (+)</button>
+    <button onclick="div()" id="div">DIVISION (/)</button>
+</center>
+<div id="display"></div>
+</body>
+<script src="arithmetic.js"></script>
+</html>
